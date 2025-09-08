@@ -1,0 +1,63 @@
+# Hugo generated/public output
+/public/
+
+# Hugo caches and generated resources
+/resources/
+/resources/_gen/
+
+# Node/npm
+node_modules/
+package-lock.json
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+
+# Build artifacts
+/dist/
+/.parcel-cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*~
+*.swp
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment and secrets
+.env
+.env.*
+secrets.yaml
+
+# Git submodules (themes as submodules)
+/.gitmodules
+
+# VSCode workspace
+*.code-workspace
+
+# Images or uploads you don't want in repo
+/uploads/
+
+# Optional: ignore public when using Netlify/GitHub Pages
+# (uncomment if you don't want to track public/)
+# /public/
