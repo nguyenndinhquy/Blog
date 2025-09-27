@@ -1,0 +1,106 @@
+baseURL: "https://example.org/"
+languageCode: "en-us"
+title: "My Blog Fruit"
+theme: "hextra"
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Blog"
+      url: "/blog/"
+      weight: 2
+    - name: "Docs"
+      url: "/docs/"
+      weight: 3
+    - name: "Profile"
+      url: "/profile/"
+      weight: 4
+    - name: "Search"
+      params:
+        type: "search"
+      weight: 5
+    - name: "More"
+      params:
+        type: "separator"
+      weight: 6
+    - name: "GitHub"
+      url: "https://github.com/nguyenndinhquy"
+      params:
+        icon: "github"
+      weight: 7
+    - name: "Theme Toggle"
+      params:
+        type: "theme-toggle"
+        label: true
+      weight: 8
+
+  sidebar:
+    - name: "More"
+      params:
+        type: "separator"
+      weight: 1
+    - name: "About"
+      pageRef: "/about"
+      weight: 2
+    - name: "Hugo Docs ↗"
+      url: "https://gohugo.io/documentation/"
+      weight: 3
+
+params:
+  # Blog settings
+  blog:
+    list:
+      pageSize: 10
+
+  # Docs sidebar
+  docs:
+    sidebar:
+      collapsed: false
+
+  # Theme settings
+  theme:
+    default: "dark"
+    displayToggle: true
+
+  # Search settings
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+
+  # Social links
+  social:
+    github: "https://github.com/nguyenndinhquy"
+    linkedin: "https://www.linkedin.com/in/nguyen-dinh-quy-3135aa295"
+
+  # Navbar settings
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      link: "/"
+      width: 40
+      height: 20
+
+  # Page settings
+  page:
+    # Enable table of contents
+    toc:
+      enable: true
+    # Enable breadcrumbs
+    breadcrumb:
+      enable: true
+
+  # Footer settings
+  footer:
+    width: "normal"
+    copyright: "© 2025 My Blog Fruit. All rights reserved."
+
+  # Enable external link decoration
+  externalLinkDecoration: true
