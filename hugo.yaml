@@ -53,11 +53,6 @@ params:
     sidebar:
       collapsed: false
 
-  # Theme settings
-  theme:
-    default: "dark"
-    displayToggle: true
-
   # Search settings
   search:
     enable: true

@@ -1,56 +1,50 @@
-<footer class="hx:mt-20 hx:bg-gray-100 hx:dark:bg-neutral-900 hx:pt-16 hx:pb-8">
-  <div class="hextra-max-page-width hx:mx-auto hx:px-8">
-
-    <!-- Navigation: Center and Spacious -->
-    <nav aria-label="Footer navigation" class="hx:flex hx:justify-center hx:mb-10">
-      <ul
-        class="hx:flex hx:flex-wrap hx:gap-x-8 hx:gap-y-2 hx:text-base hx:font-medium hx:text-gray-600 hx:dark:text-gray-400">
-        {{ range .Site.Menus.main }}
-        {{ if and (not .Params.type) (ne .Name "GitHub") (ne .Name "Search") }}
-        <li>
-          <a href="{{ .URL }}" class="hover:hx:text-gray-900 hx:dark:hover:hx:text-white 
-                        hx:transition hx:duration-200 
-                        hx:px-2 hx:py-1
-                        rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 hx:dark:focus:ring-white">
-            {{ .Name }}
-          </a>
-        </li>
+<footer class="hx:bg-gray-100 hx:dark:bg-neutral-900 hx:pt-12 hx:pb-20 hx:mt-10">
+  <div class="hextra-max-page-width hx:mx-auto hx:px-4 sm:hx:px-6 lg:hx:px-8">
+    <!-- Logo | Socials -->
+    <div class="hx:flex hx:flex-col md:hx:flex-row hx:items-center hx:justify-around hx:gap-y-8">
+      
+      <!-- Logo -->
+      <a href="{{ $.Site.BaseURL }}" class="hx:flex hx:items-center">
+        {{ with .Site.Params.navbar.logo }}
+          {{ if and .path .dark }}
+            <img src="{{ .path | relURL }}" alt="{{ $.Site.Title }} Logo" class="hx:h-10 hx:mr-3 hx:block hx:dark:hidden rounded-lg shadow" />
+            <img src="{{ .dark | relURL }}" alt="{{ $.Site.Title }} Logo" class="hx:h-10 hx:mr-3 hx:hidden hx:dark:block rounded-lg shadow" />
+          {{ else if .path }}
+            <img src="{{ .path | relURL }}" alt="{{ $.Site.Title }} Logo" class="hx:h-10 hx:mr-3 rounded-lg shadow" />
+          {{ end }}
         {{ end }}
-        {{ end }}
-      </ul>
-    </nav>
+        <span class="hx:text-2xl hx:font-bold hx:text-gray-800 hx:dark:text-white">{{ $.Site.Title }}</span>
+      </a>
 
-    <!-- Separator -->
-    <hr class="hx:my-8 hx:border-t-2 hx:border-gray-200 hx:dark:border-neutral-800" />
-
-    <!-- Bottom Bar: Copyright & Socials -->
-    <div class="hx:flex hx:flex-col sm:hx:flex-row hx:items-center hx:justify-between hx:gap-y-6">
-      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:px-2">
-        {{ with .Site.Params.footer.copyright }}
-        {{ . | safeHTML }}
-        {{ else }}
-        © {{ now.Format "2006" }} {{ .Site.Title }}.
-        {{ end }}
-      </div>
-      <div class="hx:flex hx:gap-4">
+      <!-- Socials ngang -->
+      <div class="hx:flex hx:flex-row hx:gap-12 hx:items-center">
         {{ with .Site.Params.social.github }}
-        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-          class="hx:text-gray-400 hx:transition-all hx:duration-200 hover:hx:text-gray-800 hx:dark:hover:hx:text-white hover:hx:scale-110 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-300 hx:dark:focus:ring-white">
-          <svg class="hx:h-5 hx:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <!-- ...SVG PATH AS BEFORE... -->
-          </svg>
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer"
+          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
+          GitHub
         </a>
         {{ end }}
         {{ with .Site.Params.social.linkedin }}
-        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-          class="hx:text-gray-400 hx:transition-all hx:duration-200 hover:hx:text-gray-800 hx:dark:hover:hx:text-white hover:hx:scale-110 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-300 hx:dark:focus:ring-white">
-          <svg class="hx:h-5 hx:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <!-- ...SVG PATH AS BEFORE... -->
-          </svg>
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer"
+          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
+          LinkedIn
         </a>
         {{ end }}
+        <a href="mailto:NguyennDinh.Quy@gmail.com"
+          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
+          Gmail
+        </a>
       </div>
     </div>
 
+    <!-- Copyright -->
+    <hr class="hx:my-10 hx:border-t-2 hx:border-gray-200 hx:dark:border-neutral-800" />
+    <div class="hx:text-center hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
+      {{ with .Site.Params.footer.copyright }}
+      {{ . | safeHTML }}
+      {{ else }}
+      {{ printf "© %s %s. All rights reserved." (now.Format "2006") .Site.Title | safeHTML }}
+      {{ end }}
+    </div>
   </div>
 </footer>

@@ -55,7 +55,7 @@
       document.documentElement.style.colorScheme = theme;
     }
 
-    setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'dark')
+    setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'system')
 
   </script>
 
@@ -218,7 +218,18 @@
     href="/profile/"
     
   >Profile
-    </a></li>
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></span>
+    </a><div class="hx:ltr:pr-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/profile/about/"
+    
+  >Profile
+    </a>
+              
+            </li></ul>
+      </div></li>
           <li class=""><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
@@ -401,88 +412,53 @@
     </article>
   </div>
 
-      <footer class="hx:mt-20 hx:bg-gray-100 hx:dark:bg-neutral-900 hx:pt-16 hx:pb-8">
-  <div class="hextra-max-page-width hx:mx-auto hx:px-8">
-
+      <footer class="hx:bg-gray-100 hx:dark:bg-neutral-900 hx:pt-12 hx:pb-20 hx:mt-10">
+  <div class="hextra-max-page-width hx:mx-auto hx:px-4 sm:hx:px-6 lg:hx:px-8">
     
-    <nav aria-label="Footer navigation" class="hx:flex hx:justify-center hx:mb-10">
-      <ul
-        class="hx:flex hx:flex-wrap hx:gap-x-8 hx:gap-y-2 hx:text-base hx:font-medium hx:text-gray-600 hx:dark:text-gray-400">
+    <div class="hx:flex hx:flex-col md:hx:flex-row hx:items-center hx:justify-around hx:gap-y-8">
+      
+      
+      <a href="http://localhost:1313/" class="hx:flex hx:items-center">
         
+          
+            <img src="/images/logo.svg" alt="The Dev Log Logo" class="hx:h-10 hx:mr-3 hx:block hx:dark:hidden rounded-lg shadow" />
+            <img src="/images/logo-dark.svg" alt="The Dev Log Logo" class="hx:h-10 hx:mr-3 hx:hidden hx:dark:block rounded-lg shadow" />
+          
         
-        <li>
-          <a href="/" class="hover:hx:text-gray-900 hx:dark:hover:hx:text-white 
-                        hx:transition hx:duration-200 
-                        hx:px-2 hx:py-1
-                        rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 hx:dark:focus:ring-white">
-            Home
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a href="/blog/" class="hover:hx:text-gray-900 hx:dark:hover:hx:text-white 
-                        hx:transition hx:duration-200 
-                        hx:px-2 hx:py-1
-                        rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 hx:dark:focus:ring-white">
-            Blog
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        <li>
-          <a href="/profile" class="hover:hx:text-gray-900 hx:dark:hover:hx:text-white 
-                        hx:transition hx:duration-200 
-                        hx:px-2 hx:py-1
-                        rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 hx:dark:focus:ring-white">
-            Đình Quý
-          </a>
-        </li>
-        
-        
-        
-        
-      </ul>
-    </nav>
+        <span class="hx:text-2xl hx:font-bold hx:text-gray-800 hx:dark:text-white">The Dev Log</span>
+      </a>
 
-    
-    <hr class="hx:my-8 hx:border-t-2 hx:border-gray-200 hx:dark:border-neutral-800" />
-
-    
-    <div class="hx:flex hx:flex-col sm:hx:flex-row hx:items-center hx:justify-between hx:gap-y-6">
-      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:px-2">
+      
+      <div class="hx:flex hx:flex-row hx:gap-12 hx:items-center">
         
-        © 2025 The Dev Log. All rights reserved.
-        
-      </div>
-      <div class="hx:flex hx:gap-4">
-        
-        <a href="https://github.com/nguyenndinhquy" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-          class="hx:text-gray-400 hx:transition-all hx:duration-200 hover:hx:text-gray-800 hx:dark:hover:hx:text-white hover:hx:scale-110 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-300 hx:dark:focus:ring-white">
-          <svg class="hx:h-5 hx:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            
-          </svg>
+        <a href="https://github.com/nguyenndinhquy" target="_blank" rel="noopener noreferrer"
+          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
+          GitHub
         </a>
         
         
-        <a href="https://www.linkedin.com/in/nguyen-dinh-quy-3135aa295" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-          class="hx:text-gray-400 hx:transition-all hx:duration-200 hover:hx:text-gray-800 hx:dark:hover:hx:text-white hover:hx:scale-110 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-300 hx:dark:focus:ring-white">
-          <svg class="hx:h-5 hx:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            
-          </svg>
+        <a href="https://www.linkedin.com/in/nguyen-dinh-quy-3135aa295" target="_blank" rel="noopener noreferrer"
+          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
+          LinkedIn
         </a>
         
+        <a href="mailto:NguyennDinh.Quy@gmail.com"
+          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
+          Gmail
+        </a>
       </div>
     </div>
 
+    
+    <hr class="hx:my-10 hx:border-t-2 hx:border-gray-200 hx:dark:border-neutral-800" />
+    <div class="hx:text-center hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
+      
+      © 2025 The Dev Log. All rights reserved.
+      
+    </div>
   </div>
 </footer>
+
     
     <script defer src="/js/main.js" integrity=""></script>
 <script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script>
