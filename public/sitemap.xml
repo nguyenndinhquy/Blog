@@ -2,19 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
-    <lastmod>2025-09-08T15:46:13+07:00</lastmod>
+    <loc>http://localhost:1313/blog/java-beginners-guide/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/api/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/beginner/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/career/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/javascript-fundamentals/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/learning-strategies-for-programmers/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/frontend/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/nodejs-rest-api-guide/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/java/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/java-vs-javascript/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/javascript/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/learning/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nodejs/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/programming/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-08T15:46:13+07:00</lastmod>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/webdev/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/profile/</loc>
+    <lastmod>2025-09-11T13:18:53+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-09-08T15:46:13+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1313/posts/about/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

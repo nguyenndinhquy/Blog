@@ -1,6 +1,6 @@
 baseURL: "https://example.org/"
-languageCode: "en-us"
-title: "My Blog Fruit"
+languageCode: "vi-vn"
+title: "The Dev Log"
 theme: "hextra"
 
 menu:
@@ -11,30 +11,24 @@ menu:
     - name: "Blog"
       url: "/blog/"
       weight: 2
-    - name: "Docs"
-      url: "/docs/"
-      weight: 3
-    - name: "Profile"
-      url: "/profile/"
-      weight: 4
     - name: "Search"
       params:
         type: "search"
-      weight: 5
-    - name: "More"
-      params:
-        type: "separator"
-      weight: 6
+      weight: 3
     - name: "GitHub"
       url: "https://github.com/nguyenndinhquy"
       params:
         icon: "github"
-      weight: 7
+      weight: 4
+    - name: "Đình Quý"
+      title: "Đình Quý"
+      url: "/profile"
+      weight: 5
     - name: "Theme Toggle"
       params:
         type: "theme-toggle"
         label: true
-      weight: 8
+      weight: 6
 
   sidebar:
     - name: "More"
@@ -42,7 +36,7 @@ menu:
         type: "separator"
       weight: 1
     - name: "About"
-      pageRef: "/about"
+      pageRef: "/profile"
       weight: 2
     - name: "Hugo Docs ↗"
       url: "https://gohugo.io/documentation/"
@@ -100,7 +94,7 @@ params:
   # Footer settings
   footer:
     width: "normal"
-    copyright: "© 2025 My Blog Fruit. All rights reserved."
+    copyright: "© 2025 The Dev Log. All rights reserved."
 
   # Enable external link decoration
   externalLinkDecoration: true
