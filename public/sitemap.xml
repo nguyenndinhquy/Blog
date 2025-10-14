@@ -2,74 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/java-beginners-guide/</loc>
+    <loc>http://localhost:1313/Blog/blog/java-beginners-guide/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/api/</loc>
+    <loc>http://localhost:1313/Blog/tags/api/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/beginner/</loc>
+    <loc>http://localhost:1313/Blog/tags/beginner/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/career/</loc>
+    <loc>http://localhost:1313/Blog/tags/career/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/javascript-fundamentals/</loc>
+    <loc>http://localhost:1313/Blog/blog/javascript-fundamentals/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/learning-strategies-for-programmers/</loc>
+    <loc>http://localhost:1313/Blog/blog/learning-strategies-for-programmers/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/frontend/</loc>
+    <loc>http://localhost:1313/Blog/tags/frontend/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/nodejs-rest-api-guide/</loc>
+    <loc>http://localhost:1313/Blog/blog/nodejs-rest-api-guide/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/java/</loc>
+    <loc>http://localhost:1313/Blog/tags/java/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/java-vs-javascript/</loc>
+    <loc>http://localhost:1313/Blog/blog/java-vs-javascript/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
+    <loc>http://localhost:1313/Blog/tags/javascript/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/learning/</loc>
+    <loc>http://localhost:1313/Blog/tags/learning/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/nodejs/</loc>
+    <loc>http://localhost:1313/Blog/tags/nodejs/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/programming/</loc>
+    <loc>http://localhost:1313/Blog/tags/programming/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/Blog/tags/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/Blog/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <loc>http://localhost:1313/Blog/tags/tutorial/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/webdev/</loc>
+    <loc>http://localhost:1313/Blog/tags/webdev/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/profile/</loc>
+    <loc>http://localhost:1313/Blog/profile/</loc>
     <lastmod>2025-09-11T13:18:53+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/profile/about/</loc>
+    <loc>http://localhost:1313/Blog/profile/about/</loc>
     <lastmod>2025-09-11T13:18:53+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>http://localhost:1313/Blog/blog/</loc>
     <lastmod>2025-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/Blog/posts/</loc>
     <lastmod>2025-09-08T15:46:13+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/about/</loc>
+    <loc>http://localhost:1313/Blog/posts/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/Blog/categories/</loc>
   </url>
 </urlset>
