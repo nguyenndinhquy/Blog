@@ -1,49 +1,65 @@
-<footer class="hx:bg-gray-100 hx:dark:bg-neutral-900 hx:pt-12 hx:pb-20 hx:mt-10">
-  <div class="hextra-max-page-width hx:mx-auto hx:px-4 sm:hx:px-6 lg:hx:px-8">
-    <!-- Logo | Socials -->
-    <div class="hx:flex hx:flex-col md:hx:flex-row hx:items-center hx:justify-around hx:gap-y-8">
-      
-      <!-- Logo -->
-      <a href="{{ $.Site.BaseURL }}" class="hx:flex hx:items-center">
-        {{ with .Site.Params.navbar.logo }}
-          {{ if and .path .dark }}
-            <img src="{{ .path | relURL }}" alt="{{ $.Site.Title }} Logo" class="hx:h-10 hx:mr-3 hx:block hx:dark:hidden rounded-lg shadow" />
-            <img src="{{ .dark | relURL }}" alt="{{ $.Site.Title }} Logo" class="hx:h-10 hx:mr-3 hx:hidden hx:dark:block rounded-lg shadow" />
-          {{ else if .path }}
-            <img src="{{ .path | relURL }}" alt="{{ $.Site.Title }} Logo" class="hx:h-10 hx:mr-3 rounded-lg shadow" />
+<!--
+  Footer Section
+  - This partial template defines the footer of the website.
+  - It includes the site logo, social media links, footer navigation, and copyright information.
+  - The styling is controlled by `assets/css/custom.css`.
+-->
+<footer class="footer-container hx:bg-gray-50 hx:dark:bg-neutral-950">
+  <div class="footer-inner hextra-max-page-width hx:mx-auto hx:px-4 sm:hx:px-6 lg:hx:px-8">
+    <div class="footer-main">
+      <div class="footer-branding">
+        <a href="{{ $.Site.BaseURL }}" class="footer-logo-link">
+          {{ with .Site.Params.navbar.logo }}
+            {{ if and .path .dark }}
+              <img src="{{ .path | relURL }}" alt="{{ $.Site.Title }} Logo" class="footer-logo footer-logo--light" />
+              <img src="{{ .dark | relURL }}" alt="{{ $.Site.Title }} Logo" class="footer-logo footer-logo--dark" />
+            {{ else if .path }}
+              <img src="{{ .path | relURL }}" alt="{{ $.Site.Title }} Logo" class="footer-logo" />
+            {{ end }}
           {{ end }}
-        {{ end }}
-        <span class="hx:text-2xl hx:font-bold hx:text-gray-800 hx:dark:text-white">{{ $.Site.Title }}</span>
-      </a>
-
-      <!-- Socials ngang -->
-      <div class="hx:flex hx:flex-row hx:gap-12 hx:items-center">
-        {{ with .Site.Params.social.github }}
-        <a href="{{ . }}" target="_blank" rel="noopener noreferrer"
-          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
-          GitHub
+          <span class="footer-site-title">{{ $.Site.Title }}</span>
         </a>
+        {{ with .Site.Params.footer.tagline }}
+          <p class="footer-tagline">{{ . }}</p>
         {{ end }}
-        {{ with .Site.Params.social.linkedin }}
-        <a href="{{ . }}" target="_blank" rel="noopener noreferrer"
-          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
-          LinkedIn
-        </a>
-        {{ end }}
-        <a href="mailto:NguyennDinh.Quy@gmail.com"
-          class="hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-blue-600 hx:dark:hover:text-white hover:hx:underline hx:transition-colors hx:duration-200">
-          Gmail
-        </a>
       </div>
+
+      {{ if .Site.Menus.footer }}
+        <nav class="footer-links" aria-label="Footer navigation">
+          {{ range .Site.Menus.footer }}
+            <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+          {{ end }}
+        </nav>
+      {{ end }}
+
+      {{ $email := default "NguyennDinh.Quy@gmail.com" .Site.Params.social.email }}
+      {{ if or .Site.Params.social.github .Site.Params.social.linkedin $email }}
+        <div class="footer-socials">
+          {{ with .Site.Params.social.github }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              {{ partial "utils/icon.html" (dict "name" "github" "attributes" "height=1.5em width=1.5em") }}
+            </a>
+          {{ end }}
+          {{ with .Site.Params.social.linkedin }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              {{ partial "utils/icon.html" (dict "name" "linkedin" "attributes" "height=1.5em width=1.5em") }}
+            </a>
+          {{ end }}
+          {{ if $email }}
+            <a href="mailto:{{ $email }}" aria-label="Email">
+              {{ partial "utils/icon.html" (dict "name" "mail" "attributes" "height=1.5em width=1.5em") }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
     </div>
 
-    <!-- Copyright -->
-    <hr class="hx:my-10 hx:border-t-2 hx:border-gray-200 hx:dark:border-neutral-800" />
-    <div class="hx:text-center hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
       {{ with .Site.Params.footer.copyright }}
-      {{ . | safeHTML }}
+        {{ . | safeHTML }}
       {{ else }}
-      {{ printf "© %s %s. All rights reserved." (now.Format "2006") .Site.Title | safeHTML }}
+        {{ printf "© %s %s. All rights reserved." (now.Format "2006") .Site.Title | safeHTML }}
       {{ end }}
     </div>
   </div>
