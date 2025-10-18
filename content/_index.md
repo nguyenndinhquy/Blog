@@ -1,23 +1,34 @@
 ---
 title: "Trang chủ"
-description: "Nơi chia sẻ kiến thức, hướng dẫn và những ghi chép cá nhân về lập trình và phát triển phần mềm."
+description: "Blog chia sẻ Web Backend, Node.js, PostgreSQL và Data Engineering với tutorials thực chiến, ghi chú và best practices."
 type: "home"
+
+# keywords: ["Node.js", "PostgreSQL", "Data Engineering", "Web Backend", "ETL", "Express"]
+
+# summary: "Hướng dẫn thực hành, kiến trúc, và kinh nghiệm làm việc cho developer."
+
 ---
 
 # Chào mừng đến với Blog
 
-Nơi tôi chia sẻ những kiến thức, kinh nghiệm và cả những trăn trở trên con đường phát triển sự nghiệp trong ngành phần mềm.
+Nơi tổng hợp kiến thức và kinh nghiệm xây dựng hệ thống Web Backend, cơ sở dữ liệu PostgreSQL, và Data Engineering/ETL theo hướng thực chiến.
+
+[👉 Bài viết mới nhất](/blog)
 
 ## Giới thiệu
 
-Blog này là một bộ sưu tập các bài viết kỹ thuật, hướng dẫn chi tiết (tutorials), và những ghi chú cá nhân mà tôi đã đúc kết được. Hy vọng những nội dung này sẽ giúp ích cho bạn trong hành trình học hỏi và làm việc.
+Các bài viết tập trung vào kiến trúc, tối ưu hiệu năng/bảo mật, và quy trình làm việc chuyên nghiệp nhằm giúp bạn học nhanh và áp dụng ngay.
 
 ## Các chủ đề chính
 
-Blog tập trung vào các lĩnh vực như:
-- Phát triển Web (Frontend & Backend)
-- Lập trình Java, JavaScript, Node.js
-- Thủ thuật và kinh nghiệm làm việc
-- Hướng nghiệp trong ngành CNTT
+- Web Backend (Node.js/Express, API, Auth, caching)
+- PostgreSQL & Database design
+- Data Engineering (ETL/ELT, pipelines)
+- Thủ thuật & kinh nghiệm làm việc
+- Hướng nghiệp CNTT
 
-Hãy khám phá các bài viết mới nhất hoặc tìm kiếm theo chủ đề mà bạn quan tâm. Chúc bạn có những giờ phút đọc blog vui vẻ và hiệu quả!
+## Bài nổi bật
+
+- [Thiết kế schema cho FVMMS (case study)](/blog/fvmms-schema)
+- [Best practices JWT cho API sản xuất](/blog/jwt-best-practices)
+- [ETL với Python + PostgreSQL](/blog/python-etl-postgres)

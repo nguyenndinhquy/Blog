@@ -183,4 +183,59 @@ html[class~="dark"] .footer-bottom {
     align-items: flex-start;
   }
 }
+
+/* New Color Scheme Overrides - Cool Slate */
+
+/* --- Light Theme --- */
+body {
+  background-color: #f9fafb !important; /* Cool Slate - Light BG */
+  color: #212529 !important; /* Cool Slate - Dark Text */
 }
+
+/* --- Dark Theme --- */
+html.dark body {
+  background-color: #1C1C1E !important; /* Cool Slate - Dark BG */
+  color: #E5E5E7 !important; /* Cool Slate - Light Text */
+}
+
+/* --- Accent Colors (Lighter Cool Slate Blue) --- */
+:root {
+  --primary-hue: 211deg;
+  --primary-saturation: 100%;
+  --primary-lightness: 55%; /* Lighter than original 50% */
+}
+
+.dark {
+  --primary-hue: 211deg;
+  --primary-saturation: 100%;
+  --primary-lightness: 65%; /* Lighter than original 60% */
+}
+
+/* --- Link Styling --- */
+a {
+  color: #1A88FF; /* Lighter Cool Slate - Accent */
+  text-decoration: underline;
+}
+
+html.dark a {
+  color: #4DA1FF; /* Even lighter blue for dark mode links */
+}
+
+/* You may need to adjust specific component colors below if they don't automatically inherit the new theme */
+
+/* --- Navbar Background Color Revert --- */
+/* This reverts the navbar background to the original theme colors,
+   while leaving the rest of the page with the new "Cool Slate" theme. */
+.hextra-nav-container-blur {
+  background-color: #f9fafb !important; /* Original light theme background */
+}
+
+html.dark .hextra-nav-container-blur {
+  background-color: #111111 !important; /* Original dark theme background */
+}
+
+/* --- Main Header Margin Adjustment --- */
+main>h1.hx-text-center {
+  margin-bottom: 2rem;
+}
+           

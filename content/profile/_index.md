@@ -6,12 +6,15 @@ draft: false
 toc: true
 
 ---
+<img src="/images/556542834_816311024084494_4157620774996644683_n.jpg" alt="Profile Picture" style="float: right; border-radius: 50%; margin-left: 20px;">
+
 ## Giới thiệu 
 
 - Họ và tên: Nguyễn Đình Quý  
 - Vị trí: Data Engineer
 - Kỹ sư/phát triển phần mềm tập trung vào xây dựng ứng dụng web hiệu suất cao, quan tâm lập trình mạng, hệ thống phân tán và DevOps.  
 - là người cung cấp giải pháp kỹ thuật tận dụng sức mạnh của Data, Cloud và DevOps cho các bài toán thực tế.
+
 
 ## Kỹ năng
 
@@ -22,7 +25,6 @@ toc: true
 - Khác: RESTful API, GraphQL, Testing, TDD
 
 ## Kinh nghiệm (tóm tắt)
-
 - [Vị trí/Thực tập] — [Công ty/Dự án học phần] (Thời gian)  
   - Phát triển tính năng backend và tối ưu hiệu năng dịch vụ.  
   - Thiết kế và triển khai pipelines CI/CD, containerization.  
