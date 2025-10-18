@@ -9,6 +9,26 @@
           {{ if .Title }}<h1>{{ .Title }}</h1>{{ end }}
           {{ .Content }}
         </div>
+
+        <div class="post-list">
+          {{ range .Pages.ByDate.Reverse }}
+            <div class="post-item">
+              <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <div class="post-meta">
+                <time>{{ .Date.Format "January 2, 2006" }}</time>
+                {{ with .Params.tags }}
+                  <span class="post-tags">
+                    {{ range . }}
+                      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                  </span>
+                {{ end }}
+              </div>
+              <p class="post-summary">{{ .Summary }}</p>
+            </div>
+          {{ end }}
+        </div>
+
         <div class="hx:mt-16"></div>
         {{ partial "components/last-updated.html" . }}
         {{ partial "components/comments.html" . }}

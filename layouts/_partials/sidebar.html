@@ -1,0 +1,41 @@
+<aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start">
+  <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+
+    <!-- Search -->
+    <div class="sidebar-widget">
+      <h3 class="widget-title">Search</h3>
+      {{ partial "search.html" . }}
+    </div>
+
+    <!-- About Me -->
+    <div class="sidebar-widget">
+      <h3 class="widget-title">About Me</h3>
+      <div class="about-me">
+        <img src="/images/556542834_816311024084494_4157620774996644683_n.jpg" alt="About Me" class="about-me-image">
+        <p>Welcome to my blog! I write about Data, Cloud, and DevOps. <a href="/profile">Learn more...</a></p>
+      </div>
+    </div>
+
+    <!-- Recent Posts -->
+    <div class="sidebar-widget">
+      <h3 class="widget-title">Recent Posts</h3>
+      <ul class="recent-posts">
+        {{ $recent_pages := where site.RegularPages "Type" "blog" | first 5 }}
+        {{ range $recent_pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <!-- Categories -->
+    <div class="sidebar-widget">
+      <h3 class="widget-title">Categories</h3>
+      <ul class="category-list">
+        {{ range site.Taxonomies.categories }}
+          <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+  </div>
+</aside>
