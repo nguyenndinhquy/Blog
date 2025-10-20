@@ -1,86 +1,86 @@
 +++
-title = "Core JavaScript Concepts for Web Development"
+title = "Các Khái Niệm JavaScript Cốt Lõi cho Lập Trình Web"
 date = '2025-09-15'
 draft = false
-tags = ["javascript", "frontend", "webdev"]
+tags = ["javascript", "frontend", "webdev", "vietnamese"]
 +++
 
-## Introduction to JavaScript
+## Giới thiệu về JavaScript
 
-JavaScript is the programming language of the web. If HTML is the skeleton of a webpage and CSS is the skin, then JavaScript is the brain, allowing for interactivity, dynamic content, and a responsive user experience. It runs directly in the browser and is an essential skill for any aspiring web developer.
+JavaScript là ngôn ngữ lập trình của web. Nếu HTML là bộ xương của một trang web và CSS là lớp da, thì JavaScript chính là bộ não, cho phép tạo ra sự tương tác, nội dung động và trải nghiệm người dùng linh hoạt. Nó chạy trực tiếp trong trình duyệt và là một kỹ năng thiết yếu cho bất kỳ nhà phát triển web nào.
 
-## Variables and Data Types
+## Biến và Kiểu Dữ Liệu
 
-Variables are used to store information. In modern JavaScript, you have three ways to declare them:
+Biến được sử dụng để lưu trữ thông tin. Trong JavaScript hiện đại, bạn có ba cách để khai báo chúng:
 
-- **`let`:** Used for variables whose values can change.
-- **`const`:** Used for constants, whose values are not meant to be reassigned.
-- **`var`:** The older way of declaring variables. It has some quirks, so `let` and `const` are generally preferred.
+- **`let`:** Dùng cho các biến có giá trị có thể thay đổi.
+- **`const`:** Dùng cho các hằng số, có giá trị không thể gán lại.
+- **`var`:** Cách khai báo biến cũ hơn. Nó có một số điểm khác biệt, vì vậy `let` và `const` thường được ưu tiên sử dụng.
 
 ```javascript
-let message = "Hello, world!"; // String
-const year = 2025; // Number
-let isVisible = true; // Boolean
-let user = { name: "John", age: 30 }; // Object
-let skills = ["HTML", "CSS", "JS"]; // Array
+let message = "Chào thế giới!"; // Chuỗi (String)
+const year = 2025; // Số (Number)
+let isVisible = true; // Luận lý (Boolean)
+let user = { name: "John", age: 30 }; // Đối tượng (Object)
+let skills = ["HTML", "CSS", "JS"]; // Mảng (Array)
 ```
 
-## Functions
+## Hàm (Functions)
 
-Functions are blocks of reusable code. They help you organize your logic and make it more modular.
+Hàm là các khối mã có thể tái sử dụng. Chúng giúp bạn tổ chức logic và làm cho mã của bạn trở nên module hóa hơn.
 
 ```javascript
-// Function declaration
+// Khai báo hàm (function declaration)
 function greet(name) {
-  return `Hello, ${name}!`;
+  return `Xin chào, ${name}!`;
 }
 
-// Arrow function (a more modern syntax)
+// Hàm mũi tên (arrow function - cú pháp hiện đại hơn)
 const add = (a, b) => {
   return a + b;
 };
 
-console.log(greet("Alice")); // Output: Hello, Alice!
+console.log(greet("Alice")); // Output: Xin chào, Alice!
 console.log(add(5, 3));      // Output: 8
 ```
 
-## DOM Manipulation
+## Thao tác DOM
 
-The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. JavaScript is the key to manipulating the DOM.
+Mô hình Đối tượng Tài liệu (DOM - Document Object Model) là một giao diện lập trình cho các tài liệu web. Nó biểu diễn trang web để các chương trình có thể thay đổi cấu trúc, kiểu dáng và nội dung của tài liệu. JavaScript là chìa khóa để thao tác DOM.
 
-**Example: Changing text content**
+**Ví dụ: Thay đổi nội dung văn bản**
 
-Suppose you have this HTML:
-`<h1 id="title">Welcome!</h1>`
+Giả sử bạn có HTML sau:
+`<h1 id="title">Chào mừng!</h1>`
 
-You can change its content with JavaScript:
+Bạn có thể thay đổi nội dung của nó bằng JavaScript:
 
 ```javascript
-// Select the element by its ID
+// Chọn phần tử bằng ID của nó
 const titleElement = document.getElementById("title");
 
-// Change its text content
-titleElement.textContent = "Hello, JavaScript!";
+// Thay đổi nội dung văn bản của nó
+titleElement.textContent = "Xin chào, JavaScript!";
 ```
 
-## Events
+## Sự kiện (Events)
 
-Events are actions that happen in the browser, such as a user clicking a button, submitting a form, or pressing a key. You can "listen" for these events and trigger a function in response.
+Sự kiện là các hành động xảy ra trong trình duyệt, chẳng hạn như người dùng nhấp vào một nút, gửi một biểu mẫu hoặc nhấn một phím. Bạn có thể "lắng nghe" các sự kiện này và kích hoạt một hàm để phản hồi.
 
-**Example: Handling a button click**
+**Ví dụ: Xử lý một cú nhấp chuột vào nút**
 
 HTML:
-`<button id="myButton">Click Me</button>`
+`<button id="myButton">Nhấp vào tôi</button>`
 
 JavaScript:
 ```javascript
 const button = document.getElementById("myButton");
 
 button.addEventListener("click", () => {
-  alert("Button was clicked!");
+  alert("Nút đã được nhấp!");
 });
 ```
 
-## Conclusion
+## Kết luận
 
-These fundamental concepts are the building blocks of modern web development. By mastering variables, functions, DOM manipulation, and events, you'll be well on your way to creating dynamic and interactive websites. The next step is to explore frameworks like React, Vue, or Angular to build even more powerful applications.
+Những khái niệm cơ bản này là nền tảng của phát triển web hiện đại. Bằng cách nắm vững các biến, hàm, thao tác DOM và sự kiện, bạn sẽ sẵn sàng để tạo ra các trang web động và tương tác. Bước tiếp theo là khám phá các framework như React, Vue hoặc Angular để xây dựng các ứng dụng mạnh mẽ hơn nữa.

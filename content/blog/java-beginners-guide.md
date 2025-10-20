@@ -1,79 +1,79 @@
 +++
-title = "A Beginner's Guide to Starting with Java"
+title = "Hướng Dẫn Java cho Người Mới Bắt Đầu"
 date = '2025-09-15'
 draft = false
-tags = ["java", "beginner", "tutorial"]
+tags = ["java", "beginner", "tutorial", "vietnamese"]
 +++
 
-## Introduction to Java
+## Giới thiệu về Java
 
-Java is a versatile, object-oriented programming language that has been a cornerstone of software development for decades. Created by Sun Microsystems and now owned by Oracle, it's known for its "write once, run anywhere" (WORA) principle. This means that Java code can run on any platform that has a Java Virtual Machine (JVM), from web servers and Android devices to enterprise-level applications.
+Java là một ngôn ngữ lập trình hướng đối tượng, đa năng và đã là nền tảng của ngành phát triển phần mềm trong nhiều thập kỷ. Được tạo ra bởi Sun Microsystems và hiện thuộc sở hữu của Oracle, Java nổi tiếng với nguyên tắc "viết một lần, chạy mọi nơi" (WORA). Điều này có nghĩa là mã Java có thể chạy trên bất kỳ nền tảng nào có Máy ảo Java (JVM), từ máy chủ web, thiết bị Android cho đến các ứng dụng cấp doanh nghiệp.
 
-**Why learn Java?**
-- **Platform Independence:** Run your code on Windows, macOS, or Linux without modification.
-- **Strong Community:** A massive global community means plenty of resources and support.
-- **Career Opportunities:** Java is consistently in high demand for backend, big data, and Android development roles.
-- **Robust and Secure:** Its design emphasizes reliability and security, making it a trusted choice for large-scale systems.
+**Tại sao nên học Java?**
+- **Độc lập nền tảng:** Chạy mã của bạn trên Windows, macOS hoặc Linux mà không cần sửa đổi.
+- **Cộng đồng lớn mạnh:** Một cộng đồng toàn cầu khổng lồ đồng nghĩa với việc có rất nhiều tài nguyên và sự hỗ trợ.
+- **Cơ hội nghề nghiệp:** Java luôn có nhu cầu cao cho các vị trí phát triển backend, dữ liệu lớn và Android.
+- **Mạnh mẽ và Bảo mật:** Thiết kế của Java nhấn mạnh vào sự đáng tin cậy và bảo mật, làm cho nó trở thành một lựa chọn đáng tin cậy cho các hệ thống quy mô lớn.
 
-## Setting Up Your Development Environment
+## Cài đặt Môi trường Phát triển
 
-Before you can write Java code, you need two things:
-1.  **Java Development Kit (JDK):** This contains the compiler and the JVM.
-2.  **An Integrated Development Environment (IDE):** A code editor with tools to make development easier. Popular choices include IntelliJ IDEA, Eclipse, and Visual Studio Code with Java extensions.
+Trước khi bạn có thể viết mã Java, bạn cần hai thứ:
+1.  **Bộ công cụ phát triển Java (JDK):** Chứa trình biên dịch và JVM.
+2.  **Môi trường phát triển tích hợp (IDE):** Một trình soạn thảo mã với các công cụ giúp phát triển dễ dàng hơn. Các lựa chọn phổ biến bao gồm IntelliJ IDEA, Eclipse và Visual Studio Code với các tiện ích mở rộng cho Java.
 
-**Steps to install the JDK:**
-1.  Go to the Oracle JDK download page or choose an open-source alternative like OpenJDK.
-2.  Download the installer for your operating system.
-3.  Run the installer and follow the on-screen instructions.
-4.  Verify the installation by opening a terminal or command prompt and typing `java -version`.
+**Các bước cài đặt JDK:**
+1.  Truy cập trang tải xuống của Oracle JDK hoặc chọn một giải pháp thay thế mã nguồn mở như OpenJDK.
+2.  Tải xuống trình cài đặt cho hệ điều hành của bạn.
+3.  Chạy trình cài đặt và làm theo hướng dẫn trên màn hình.
+4.  Xác minh cài đặt bằng cách mở terminal hoặc command prompt và gõ `java -version`.
 
-## Your First Java Program: Hello, World!
+## Chương trình Java Đầu tiên: Hello, World!
 
-Let's write a classic "Hello, World!" program.
+Hãy cùng viết một chương trình "Hello, World!" kinh điển.
 
-1.  Create a new file named `HelloWorld.java`.
-2.  Add the following code:
+1.  Tạo một tệp mới có tên `HelloWorld.java`.
+2.  Thêm đoạn mã sau:
 
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
-        // This line prints "Hello, World!" to the console.
+        // Dòng này in "Hello, World!" ra console.
         System.out.println("Hello, World!");
     }
 }
 ```
 
-**To compile and run from the command line:**
-1.  Navigate to the directory where you saved the file.
-2.  Compile the code: `javac HelloWorld.java`
-3.  Run the compiled code: `java HelloWorld`
+**Để biên dịch và chạy từ dòng lệnh:**
+1.  Điều hướng đến thư mục bạn đã lưu tệp.
+2.  Biên dịch mã: `javac HelloWorld.java`
+3.  Chạy mã đã biên dịch: `java HelloWorld`
 
-You should see `Hello, World!` printed to your console.
+Bạn sẽ thấy `Hello, World!` được in ra console của mình.
 
-## Basic Concepts
+## Các Khái Niệm Cơ Bản
 
-- **Class:** A blueprint for creating objects. Every Java program must have at least one class.
-- **`main` method:** The entry point of your application.
-- **Variables:** Containers for storing data values.
+- **Class:** Một bản thiết kế để tạo ra các đối tượng. Mọi chương trình Java phải có ít nhất một class.
+- **Phương thức `main`:** Điểm khởi đầu của ứng dụng của bạn.
+- **Biến:** Các vùng chứa để lưu trữ các giá trị dữ liệu.
   ```java
-  String name = "Alice"; // Text
-  int age = 30;         // Integer
-  double score = 95.5;  // Floating-point number
-  boolean isLoggedIn = true; // True or false
+  String name = "Alice"; // Văn bản
+  int age = 30;         // Số nguyên
+  double score = 95.5;  // Số thực
+  boolean isLoggedIn = true; // Đúng hoặc sai
   ```
-- **Control Flow:** Direct the execution of your program.
+- **Luồng điều khiển:** Điều hướng việc thực thi chương trình của bạn.
   ```java
   if (age >= 18) {
-      System.out.println("You are an adult.");
+      System.out.println("Bạn là người lớn.");
   } else {
-      System.out.println("You are a minor.");
+      System.out.println("Bạn là trẻ vị thành niên.");
   }
 
   for (int i = 0; i < 5; i++) {
-      System.out.println("Loop iteration: " + i);
+      System.out.println("Vòng lặp thứ: " + i);
   }
   ```
 
-## Conclusion
+## Kết luận
 
-You've taken your first steps into the world of Java! From here, you can explore more advanced topics like object-oriented programming, data structures, and building real-world applications. Keep practicing, and welcome to the Java community!
+Bạn đã thực hiện những bước đầu tiên vào thế giới của Java! Từ đây, bạn có thể khám phá các chủ đề nâng cao hơn như lập trình hướng đối tượng, cấu trúc dữ liệu và xây dựng các ứng dụng trong thế giới thực. Hãy tiếp tục luyện tập và chào mừng bạn đến với cộng đồng Java!
