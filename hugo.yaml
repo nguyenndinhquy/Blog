@@ -11,36 +11,23 @@ menu:
     - name: "Blog"
       url: "/blog/"
       weight: 2
+    - name: "Profile"
+      url: "/profile/"
+      weight: 3
     - name: "Search"
       params:
         type: "search"
-      weight: 3
+      weight: 4
     - name: "GitHub"
       url: "https://github.com/nguyenndinhquy"
       params:
         icon: "github"
-      weight: 4
-    - name: "Đình Quý"
-      title: "Đình Quý"
-      url: "/profile"
       weight: 5
     - name: "Theme Toggle"
       params:
         type: "theme-toggle"
         label: true
       weight: 6
-
-  sidebar:
-    - name: "More"
-      params:
-        type: "separator"
-      weight: 1
-    - name: "About"
-      pageRef: "/profile"
-      weight: 2
-    - name: "Hugo Docs ↗"
-      url: "https://gohugo.io/documentation/"
-      weight: 3
 
   footer:
     - name: "Home"
@@ -105,3 +92,8 @@ params:
 
   # Enable external link decoration
   externalLinkDecoration: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
