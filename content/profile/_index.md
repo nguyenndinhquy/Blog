@@ -9,6 +9,7 @@ toc: true
 <!-- markdownlint-disable-next-line MD033 -->
 <img src="../images/avatar.png" alt="Profile Picture" class="about-me-image about-me-image--profile" />
 
+
 ## Giới thiệu
 
 - Họ và tên: **Nguyễn Đình Quý**
